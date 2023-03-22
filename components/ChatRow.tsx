@@ -18,7 +18,7 @@ function ChatRow({ id }: Props) {
   const [active, setActive] = useState(false);
 
   const [messages] = useCollection(
-    collection(db, "users", session?.user?.email!, "chats", id, "messeges")
+    collection(db, "users", session?.user?.email!, "chats", id, "messages")
   );
 
   useEffect(() => {
@@ -30,13 +30,13 @@ function ChatRow({ id }: Props) {
     await deleteDoc(doc(db, "users", session?.user?.email!, "chats", id));
     router.replace("/");
   };
-
   return (
     <Link
       href={`/chat/${id}`}
       className={`chatRow justify-center ${active && "bg-gray-700/50"}`}
     >
       <ChatBubbleLeftIcon className="h-5 w-5" />
+
       <p className="flex-1 hidden md:inline-flex truncate">
         {messages?.docs[messages?.docs.length - 1]?.data().text || "New Chat"}
       </p>
