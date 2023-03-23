@@ -6,7 +6,7 @@ function HomePage() {
     <div className="flex flex-col items-center justify-center h-screen px-2 text-white">
       <h1 className="text-5xl font-bold mb-20">ChatGPT</h1>
 
-      <div className="flex space-x-2 text-center">
+      <div className="flex md:flex-row flex-col md:space-x-2 space-x-0 space-y-2 md:space-y-0 text-center">
         <div>
           <div className="flex flex-col items-center jsutify-center mb-5">
             <SunIcon className="h-8 w-8" />
