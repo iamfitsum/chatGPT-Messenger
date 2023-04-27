@@ -37,3 +37,5 @@ serviceAccountKey.json
 next-env.d.ts
 
 .vercel
+
+firebase.ts
