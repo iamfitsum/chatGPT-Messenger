@@ -39,7 +39,8 @@
       "google-gax>protobufjs": "7.2.5",
       "@grpc/proto-loader>protobufjs": "7.2.5",
       "form-data": "4.0.4",
-      "openai>form-data": "4.0.4"
+      "openai>form-data": "4.0.4",
+      "cross-spawn": "7.0.5"
     }
   }
 }
