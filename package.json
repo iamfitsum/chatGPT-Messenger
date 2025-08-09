@@ -35,6 +35,8 @@
   },
   "pnpm": {
     "overrides": {
+      "@babel/runtime": "7.26.10",
+      "@babel/helpers": "7.26.10",
       "protobufjs": "7.2.5",
       "google-gax>protobufjs": "7.2.5",
       "@grpc/proto-loader>protobufjs": "7.2.5",
