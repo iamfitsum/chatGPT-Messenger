@@ -14,8 +14,8 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  const models = await openai.listModels().then((res) => res.data.data);
-  const modelOptions = models.map((model) => ({
+  const models = await openai.models.list();
+  const modelOptions = models.data.map((model) => ({
     value: model.id,
     label: model.id,
   }));
